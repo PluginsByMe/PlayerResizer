@@ -80,6 +80,15 @@ class Main extends PluginBase implements Listener{
       public function onDisable(){
         $this->getLogger()->info(self::PREFIX . "Plugin disabled!");
     }
+  
+  public function EntityLevelChangeEvent(EntityLevelChangeEvent $event){
+    $player = $event->getEntity();
+    $world = $event->getTarget()->getName();
+    $worlds = new Config($this->getDataFolder() . "worlds.yml", Config::YAML);
+    $worldstatus = $worlds->get($world);
+    if($worldstatus == "revertsize"){
+      $player->setScale(1);
+      $player->sendMessage(self::PREFIX . "Your size has been reverted to its natural size: 1, as you entered " . $world);
   public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
   switch($cmd->getName()){
     case "":
