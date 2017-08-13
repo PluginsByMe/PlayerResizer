@@ -1,0 +1,16 @@
+name: PlayerResizer
+author: TheRoyalBlock
+api: [1.0.0, 2.0.0, 3.0.0, 3.0.0-alpha4, 3.0.0-ALPHA5, 3.0.0-ALPHA6, 3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 4.0.0]
+version: 1.0
+main: TheRoyalBlock/PlayerResizer/Main
+
+command:
+	resizeme:
+		description: Resize yourself
+		usage: /resizeme <number between 0.5 and 5>
+	resizethem:
+		description: cmd2nameDescription
+		usage: /resizethem <playername> <number between 0.5 and 5>
+    
+# Permissions 
+permissions: []
