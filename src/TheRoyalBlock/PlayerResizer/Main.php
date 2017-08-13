@@ -89,6 +89,11 @@ class Main extends PluginBase implements Listener{
     if($worldstatus == "revertsize"){
       $player->setScale(1);
       $player->sendMessage(self::PREFIX . "Your size has been reverted to its natural size: 1, as you entered " . $world);
+    }else{
+      return true;
+    }
+  }
+  
   public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
   switch($cmd->getName()){
     case "":
