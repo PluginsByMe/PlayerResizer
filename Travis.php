@@ -16,7 +16,7 @@ while(!feof($pipes[1])){
 fclose($pipes[1]);
 fclose($pipes[2]);
 echo "\n\nReturn value: ". proc_close($server) ."\n";
-if(count(glob("crashdumps/CrashDump*.log")) === 0){
+if(count(glob("../*.log")) === 0){
 	echo "The PlayerResizer plugin has no unrecoverable errors and is working well!\nYAY!";
 	exit(0);
 }else{
