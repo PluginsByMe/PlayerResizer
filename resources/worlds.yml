@@ -1,11 +1,11 @@
 ########################################
-# PlayerResizer config file #
-# Format1: revertsize: <worldname> #
-# Format2: keepsize: <worldname> #
+#       PlayerResizer config file      #
+#   Format1: revertsize: <worldname>   #
+#    Format2: keepsize: <worldname>    #
 # If format 1, a player's size will be #
-# reverted when entering that world. #
+#  reverted when entering that world.  #
 # If format 2, a player's size will be #
-# kept the same. #
+#             kept the same.           #
 # If no data is shown, a player's size #
-# will be kept the same. #
+#        will be kept the same.        #
 ########################################
