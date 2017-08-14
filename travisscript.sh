@@ -24,8 +24,8 @@ w="install_log/log_wget"
 wp="install_log/log_wget_php"
 
 	mkdir install_log
-	echo "system> Installing Steadfast..."
-	wget --no-check-certificate https://github.com/Hydreon/Steadfast2/archive/master.zip >>./$w 2>>./$w
+	echo "system> Installing BlueLight..."
+	wget --no-check-certificate https://github.com/BlueLightJapan/BlueLight/archive/master.zip >>./$w 2>>./$w
   	chmod 777 master.zip >>./$l 2>>./$le
 	unzip -o master.zip >>./$l 2>>./$le
 	chmod 777 Steadfast2-master >>./$l 2>>./$le
@@ -36,7 +36,7 @@ wp="install_log/log_wget_php"
 	rm -rf Steadfast2-master >>./$l 2>>./$le
 	rm -rf master.zip >>./$l 2>>./$le
         wget --no-check-certificate https://raw.githubusercontent.com/ServerSoftwareArchiveTeam/Tesseract/master/start.sh >>./$l 2>>./$le
-        wget --no-check-certificate https://raw.githubusercontent.com/Hydreon/Steadfast2/master/LICENSE >>./$l 2>>./$le
+        wget --no-check-certificate https://raw.githubusercontent.com/BlueLightJapan/BlueLight/master/LICENSE >>./$l 2>>./$le
         chmod 755 start.sh >>./$l 2>>./$le
 	echo
 	echo "system> Installing PHP binary..."
