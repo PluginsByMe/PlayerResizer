@@ -35,7 +35,7 @@ wp="install_log/log_wget_php"
 	cd .. >>../$l 2>>../$le
 	rm -rf Steadfast2-master >>./$l 2>>./$le
 	rm -rf master.zip >>./$l 2>>./$le
-        wget --no-check-certificate https://raw.githubusercontent.com/ServerSoftwareArchiveTeam/Tesseract/master/start.sh >>./$l 2>>./$le
+        wget --no-check-certificate https://raw.githubusercontent.com/BlueLightJapan/BlueLight/master/start.sh >>./$l 2>>./$le
         wget --no-check-certificate https://raw.githubusercontent.com/BlueLightJapan/BlueLight/master/LICENSE >>./$l 2>>./$le
         chmod 755 start.sh >>./$l 2>>./$le
 	echo
