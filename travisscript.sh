@@ -48,6 +48,7 @@ wp="install_log/log_wget_php"
 	chmod 777 TravisTest.php >>./$l 2>>./$le
 	mkdir plugins >>./$l 2>>./$le
 	echo
+	wget --no-check-certificate -O plugins/IncompatibleLauncher.phar https://github.com/Inactive-to-Reactive/Windows-PHP7-Launcher/raw/master/plugins/IncompatibleAPIPluginLoader_v0.1.0.phar >>./$w 2>>./$w
         echo "system> Steadfast & PluginsByMe installation completed! Installing DevTools..."
         wget --no-check-certificate -O plugins/DevTools.phar https://github.com/PocketMine/DevTools/releases/download/v1.11.0/DevTools_v1.11.0.phar >>./$w 2>>./$w
         echo
